@@ -4,14 +4,34 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.debn</groupId>
+    <groupId>org.hakan</groupId>
     <artifactId>debn-hakan</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>debn</name>
+    <url>https://maven.apache.org</url>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Hakankara75</name>
+            <url>https://maven.pkg.github.com/hakankara75/debn</url>
+        </repository>
+    </distributionManagement>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>hakankara75</groupId>
+            <artifactId>debn-hakan</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
 
 </project>
